@@ -8,6 +8,6 @@ const AllCountries =(props)=>{
                <CountryCard key={country.name} country ={country}/>
            )
             })}
-            </div>)
+            </div>);
 }
-export default AllCountries
+export default AllCountries 
