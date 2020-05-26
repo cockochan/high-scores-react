@@ -5,7 +5,7 @@ const CountryText = (props)=>{
  props.scores.map((player)=>{
       
        return(
-           <ul key={player.n}>
+           <ul key={player.n} className ="playerCard" >
 <p className ="playerName" > {player.n}</p>
 <p className ="playerScore"> {player.s}</p>
 
