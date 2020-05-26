@@ -10,7 +10,7 @@ function App() {
     <div className="blueColumn">
       <p>High Scores per Country</p>
        <AllCountries allCountryScores={allCountryScores}/>
-         })}
+        
        </div>
     
   );
