@@ -1,7 +1,7 @@
 import React from 'react'
 
 const CountryText = (props)=>{
-    console.log()
+ 
    props.scores.map(player=>{
       
        return(
@@ -9,6 +9,9 @@ const CountryText = (props)=>{
 <li className ="playerName"> {player.n}</li>
 <li className ="playerScore"> {player.s}</li>
 
-</ul>)})}
+</ul>)
+})
+return CountryText
+}
 
 export default CountryText
