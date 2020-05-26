@@ -6,8 +6,8 @@ const CountryText = (props)=>{
       
        return(
            <ul key={player.n}>
-<li className ="playerName" > {player.n}</li>
-<li className ="playerScore"> {player.s}</li>
+<p className ="playerName" > {player.n}</p>
+<p className ="playerScore"> {player.s}</p>
 
 </ul>)
 }))

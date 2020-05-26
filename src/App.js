@@ -8,7 +8,7 @@ function App() {
 
   return (
     <div className="blueColumn">
-      <p>High Scores per Country</p>
+      <p className="allHighs">High Scores per Country</p>
        <AllCountries allCountryScores={allCountryScores}/>
         
        </div>

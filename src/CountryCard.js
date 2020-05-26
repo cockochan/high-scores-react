@@ -4,7 +4,7 @@ const CountryCard = (props)=>{
 
     return(
     <div className="CountryCard">
-    <p>{props.country.name}</p>
+    <p className = "countryName">{props.country.name}</p>
    <CountryText scores ={props.country.scores} />
    </div>
     )
