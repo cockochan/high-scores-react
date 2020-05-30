@@ -1,3 +1,12 @@
+<<<<<<< HEAD
+=======
+/* import '/fonts/ARCADE.TTF'
+
+@font-face {
+  font-family: 'ARCADE';
+  src: local('ARCADE.TTF'), ur;('/fonts/ARCADE.TTF') format('truetype');
+} */
+>>>>>>> parent of acf25fb... Revert "1 stage done"
 
 body {
   margin: 0;

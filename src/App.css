@@ -40,13 +40,16 @@
   justify-content: space-evenly;
   align-items: center;
 }
-
+.playerScore{
+  font-family: 'VT323', monospace;
+  font-size:2em;
+}
 .countryName{
   display:flex;
   justify-content: flex-start;
   font-size: 18px;
   color:violet;
-
+  font-family: 'VT323', monospace;
   font-size:2em;
 }
 .playerName{
@@ -55,7 +58,7 @@
   font-size: 18px;
   color:violet;
 
-
+  font-family: 'VT323', monospace;
   font-size:2em;
   
 }
