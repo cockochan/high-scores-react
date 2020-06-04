@@ -63,7 +63,12 @@
   
 }
 
-
+.searchInput{
+  margin-top:15px;
+  font-family: 'VT323', monospace;
+  color:violet;
+  font-size:2em;
+}
 .CountryCard{
 
 border: 5px solid rgb(222, 247, 0);
