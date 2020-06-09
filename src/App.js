@@ -36,7 +36,7 @@ const Superbutton =()=>{
       <Superbutton />
       <Search handleSearch={handleSearch}/>
       <p className="allHighs">High Scores per Country</p>
-       <AllCountries allCountryScores={reversible}/>
+       <AllCountries allCountryScores={scoresToRender}/>
        </div>
     
   );
