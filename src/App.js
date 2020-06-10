@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState} from 'react';
 import Search from './Search.js'
 import './App.css';
 import allCountryScores from './scores.js'
@@ -15,16 +15,16 @@ function App() {
   }
   
   const reverse = (event)=>{
-    
-    setReversible(reversible.reverse())
+    const reversed = [...reversible].reverse()
+    setReversible(reversed)
   
     setScoresToRender(reversible)
     console.log(reversible)
   }
-  useEffect(()=>{
-    setScoresToRender(reversible)
-    // console.log(reversible)
-  }, [reversible]);
+  // useEffect(()=>{
+    // setScoresToRender(reversible)
+  //   // console.log(reversible)
+  // }, [reversible]);
   
 const Superbutton =()=>{
   return(
