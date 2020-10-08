@@ -8,19 +8,24 @@ function App() {
   allCountryScores.sort((a, b) => a.name.localeCompare(b.name))
   const [scoresToRender, setScoresToRender]=useState(allCountryScores)
   const [reversible, setReversible]=useState(allCountryScores)
-  const handleSearch = (event)=>{
 
+  const handleSearch = (event)=>{
     const filteredCountry = allCountryScores.filter(country=>country.name.toLowerCase().includes(event.target.value.toLowerCase()))
     setScoresToRender(filteredCountry.sort((a, b) => a.name.localeCompare(b.name)))
   }
-  const newreversesomething =
+  
   const reverse = (event)=>{
- 
-    setReversible(reversible.reverse())
+    const reversed = [...reversible].reverse()
+    setReversible(reversed)
   
     setScoresToRender(reversible)
     console.log(reversible)
   }
+  // useEffect(()=>{
+    // setScoresToRender(reversible)
+  //   // console.log(reversible)
+  // }, [reversible]);
+  
 const Superbutton =()=>{
   return(
   <button onClick={reverse}>Sort inverse</button>
@@ -32,7 +37,6 @@ const Superbutton =()=>{
       <Search handleSearch={handleSearch}/>
       <p className="allHighs">High Scores per Country</p>
        <AllCountries allCountryScores={scoresToRender}/>
-        
        </div>
     
   );
