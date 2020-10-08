@@ -13,8 +13,9 @@ function App() {
     const filteredCountry = allCountryScores.filter(country=>country.name.toLowerCase().includes(event.target.value.toLowerCase()))
     setScoresToRender(filteredCountry.sort((a, b) => a.name.localeCompare(b.name)))
   }
+  const newreversesomething =
   const reverse = (event)=>{
-
+ 
     setReversible(reversible.reverse())
   
     setScoresToRender(reversible)
